@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 AWS Services Guide</title>
+    <style>
+        :root {
+            --primary-color: #232f3e;
+            --secondary-color: #ff9900;
+            --bg-color: #f0f8ff;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 0.1em;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+		nav {
+            position: relative;
+        }
+        .hamburger {
+            cursor: pointer;
+            width: 30px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .hamburger div {
+            background-color: #fff;
+            height: 4px;
+            border-radius: 2px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            display: none;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li {
+            padding: 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        nav ul li:hover {
+            background-color: #f4f4f9;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+		h3 {
+            margin: 0;
+            font-size: 2em;
+
+        }
+        .intro {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .category {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        h2 .emoji {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #0073bb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--secondary-color);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <h1>🚀 AmazeOnCloud - Services Explorer </h1>
+        <h3>Your Comprehensive Guide to AWS Services</h3>
+		
+		<img src="LCU_logo.png" alt="Your Logo" style="height: 50px; margin-right: 10px;">
+    </header>
+	-->
+	
+	<header style="height: 100px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 100%;">
+        <a href="https://lcu.cloud">
+            <img src="images/LCU_logo.png" alt="LCU" style="height: 180px; width: auto;">
+        </a>
+        <h1 style="flex-grow: 1; text-align: margin: 0;"> AWS Services - Comprehensive Guide </h1>
+	
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="dropdown-menu">
+            <li><a href="#homepage">Homepage</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+	
+    </div>
+
+
+</header>
+	
+    <div class="container" >
+        <section class="intro" id="intro">
+       
+
+    <h1>What is Cloud Computing? ☁️</h1>
+    <p>Cloud computing is the delivery of computing services, including servers, storage, databases, networking, software, and analytics, over the internet ("the cloud"). This model provides flexible resources, faster innovation, and economies of scale. With cloud computing, you typically pay only for what you use, helping to lower operating costs and run your infrastructure more efficiently. <a href="cloudcomputing.html">Click here to explore for more</a>💡</p>
+	
+	<h2>Amazon Web Services (AWS) and Cloud Computing</h2>
+    <p>Amazon Web Services (AWS) is a leading cloud service provider that offers a wide range of computing resources and services over the internet, allowing businesses and individuals to build, deploy, and manage applications without the need for physical infrastructure. <br> <a href="https://aws.amazon.com/">Official AWS Page</a>🌐</p>
+
+    <h2>AWS: A Leader in Cloud Computing 🚀</h2>
+    <p>AWS, launched in 2006, is a pioneer in cloud computing and offers a comprehensive suite of services that cater to various needs. Whether you're a startup, a large enterprise, or a government agency, AWS provides the tools and services to help you succeed. 🏆</p>
+
+    <h2>Key Benefits of AWS Cloud Computing 🌟</h2>
+    <ul>
+        <li><strong>Scalability and Flexibility 🔄:</strong> AWS allows you to scale your resources up or down based on demand. This flexibility ensures that you only use the resources you need, reducing waste and costs.</li>
+        <li><strong>Cost-Effectiveness 💰:</strong> With a pay-as-you-go pricing model, AWS eliminates the need for large upfront investments in hardware. You can start small and scale as your business grows.</li>
+        <li><strong>Global Reach 🌍:</strong> AWS has a vast global infrastructure, with data centers located in multiple regions worldwide. This enables you to deploy applications close to your users, reducing latency and improving performance.</li>
+        <li><strong>Security 🔒:</strong> AWS offers robust security features, including encryption, identity management, and compliance certifications. AWS's shared responsibility model ensures that both AWS and the customer have roles in maintaining security.</li>
+        <li><strong>Innovation and Agility 🚀:</strong> AWS continuously innovates, adding new services and features that allow businesses to experiment and deploy new applications quickly.</li>
+		<br> <a href="https://aws.amazon.com/about-aws/global-infrastructure/">AWS Global Infrastructure</a>
+		
+    </ul>
+			
+        </section>
+
+        <section class="services-grid" id="services">
+            <div class="category">
+                <h2><span class="emoji">💻</span>Compute</h2>
+                <ul>
+                    <li><a href="ec2.html">Amazon EC2</a></li>
+                   <!-- <li><a href="lambda.html">AWS Lambda</a></li>
+                    <li><a href="ecs.html">Amazon ECS</a></li>
+                    <li><a href="eks.html">Amazon EKS</a></li>
+                    <li><a href="fargate.html">AWS Fargate</a></li>
+                    <li><a href="lightsail.html">Amazon Lightsail</a></li>
+                    <li><a href="batch.html">AWS Batch</a></li>
+                    <li><a href="elastic-beanstalk.html">AWS Elastic Beanstalk</a></li>
+                    <li><a href="outposts.html">AWS Outposts</a></li>
+                    <li><a href="serverless-application-repository.html">AWS Serverless Application Repository</a></li> -->
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2><span class="emoji">💾</span>Storage</h2>
+                <ul>
+                    <li><a href="s3.html">Amazon S3</a></li>
+                  <!--  <li><a href="ebs.html">Amazon EBS</a></li>
+                    <li><a href="efs.html">Amazon EFS</a></li>
+                    <li><a href="fsx.html">Amazon FSx</a></li>
+                    <li><a href="s3-glacier.html">Amazon S3 Glacier</a></li>
+                    <li><a href="storage-gateway.html">AWS Storage Gateway</a></li>
+                    <li><a href="backup.html">AWS Backup</a></li>
+                    <li><a href="snow-family.html">AWS Snow Family</a></li> -->
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2><span class="emoji">🗄️</span>Database</h2>
+                <ul>
+                    <li><a href="rds.html">Amazon RDS</a></li>
+                   <!-- <li><a href="dynamodb.html">Amazon DynamoDB</a></li>
+                    <li><a href="elasticache.html">Amazon ElastiCache</a></li>
+                    <li><a href="neptune.html">Amazon Neptune</a></li>
+                    <li><a href="redshift.html">Amazon Redshift</a></li>
+                    <li><a href="aurora.html">Amazon Aurora</a></li>
+                    <li><a href="documentdb.html">Amazon DocumentDB</a></li>
+                    <li><a href="keyspaces.html">Amazon Keyspaces</a></li>
+                    <li><a href="timestream.html">Amazon Timestream</a></li>
+                    <li><a href="qldb.html">Amazon QLDB</a></li> -->
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2><span class="emoji">🌐</span>Networking & Content Delivery</h2>
+                <ul>
+                    <li><a href="vpc.html">Amazon VPC</a></li>
+                  <!--  <li><a href="cloudfront.html">Amazon CloudFront</a></li>
+                    <li><a href="route53.html">Amazon Route 53</a></li>
+                    <li><a href="api-gateway.html">Amazon API Gateway</a></li>
+                    <li><a href="direct-connect.html">AWS Direct Connect</a></li>
+                    <li><a href="global-accelerator.html">AWS Global Accelerator</a></li>
+                    <li><a href="transit-gateway.html">AWS Transit Gateway</a></li>
+                    <li><a href="app-mesh.html">AWS App Mesh</a></li>
+                    <li><a href="cloud-map.html">AWS Cloud Map</a></li> -->
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2><span class="emoji">🤖</span>Machine Learning</h2>
+                <ul>
+                    <li><a href="sagemaker.html">Amazon SageMaker</a></li>
+                  <!--  <li><a href="comprehend.html">Amazon Comprehend</a></li>
+                    <li><a href="lex.html">Amazon Lex</a></li>
+                    <li><a href="polly.html">Amazon Polly</a></li>
+                    <li><a href="rekognition.html">Amazon Rekognition</a></li>
+                    <li><a href="textract.html">Amazon Textract</a></li>
+                    <li><a href="forecast.html">Amazon Forecast</a></li>
+                    <li><a href="personalize.html">Amazon Personalize</a></li>
+                    <li><a href="translate.html">Amazon Translate</a></li>
+                    <li><a href="deepracer.html">AWS DeepRacer</a></li> -->
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2><span class="emoji">📊</span>Analytics</h2>
+                <ul>
+                    <li><a href="athena.html">Amazon Athena</a></li>
+                  <!--  <li><a href="emr.html">Amazon EMR</a></li>
+                    <li><a href="cloudwatch.html">Amazon CloudWatch</a></li>
+                    <li><a href="kinesis.html">Amazon Kinesis</a></li>
+                    <li><a href="elasticsearch-service.html">Amazon Elasticsearch Service</a></li>
+                    <li><a href="quicksight.html">Amazon QuickSight</a></li>
+                    <li><a href="data-exchange.html">AWS Data Exchange</a></li>
+                    <li><a href="glue.html">AWS Glue</a></li>
+                    <li><a href="lake-formation.html">AWS Lake Formation</a></li> -->
+                </ul>
+            </div>
+
+            <!-- Commenting here for first roll out prod on 01Sep2024 -->
+			<!--<div class="category">
+                <h2><span class="emoji">🔒</span>Security, Identity & Compliance</h2>
+                <ul>
+                    <li><a href="iam.html">AWS Identity and Access Management (IAM)</a></li>
+                 <!--   <li><a href="cognito.html">Amazon Cognito</a></li>
+                    <li><a href="guardduty.html">Amazon GuardDuty</a></li>
+                    <li><a href="inspector.html">Amazon Inspector</a></li>
+                    <li><a href="macie.html">Amazon Macie</a></li>
+                    <li><a href="artifact.html">AWS Artifact</a></li>
+                    <li><a href="certificate-manager.html">AWS Certificate Manager</a></li>
+                    <li><a href="cloudhsm.html">AWS CloudHSM</a></li>
+                    <li><a href="directory-service.html">AWS Directory Service</a></li>
+                    <li><a href="firewall-manager.html">AWS Firewall Manager</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🔗</span>Application Integration</h2>
+                <ul>
+                    <li><a href="step-functions.html">AWS Step Functions</a></li>
+                   <!-- <li><a href="amazon-mq.html">Amazon MQ</a></li>
+                    <li><a href="sns.html">Amazon Simple Notification Service (SNS)</a></li>
+                    <li><a href="sqs.html">Amazon Simple Queue Service (SQS)</a></li>
+                    <li><a href="appsync.html">AWS AppSync</a></li>
+                    <li><a href="eventbridge.html">Amazon EventBridge</a></li> 
+                </ul>
+            </div> -->
+
+             <!-- <div class="category">
+                <h2><span class="emoji">💰</span>AWS Cost Management</h2>
+                <ul>
+                    <li><a href="cost-explorer.html">AWS Cost Explorer</a></li>
+                 <!--   <li><a href="budgets.html">AWS Budgets</a></li>
+                    <li><a href="cost-and-usage-report.html">AWS Cost and Usage Report</a></li>
+                    <li><a href="reserved-instance-reporting.html">Reserved Instance Reporting</a></li>
+                    <li><a href="savings-plans.html">Savings Plans</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🎛️</span>Management & Governance</h2>
+                <ul>
+                    <li><a href="cloudwatch.html">Amazon CloudWatch</a></li>
+                   <!-- <li><a href="aws-auto-scaling.html">AWS Auto Scaling</a></li>
+                    <li><a href="cloudformation.html">AWS CloudFormation</a></li>
+                    <li><a href="cloudtrail.html">AWS CloudTrail</a></li>
+                    <li><a href="config.html">AWS Config</a></li>
+                    <li><a href="opsworks.html">AWS OpsWorks</a></li>
+                    <li><a href="service-catalog.html">AWS Service Catalog</a></li>
+                    <li><a href="systems-manager.html">AWS Systems Manager</a></li>
+                    <li><a href="trusted-advisor.html">AWS Trusted Advisor</a></li>
+                    <li><a href="managed-services.html">AWS Managed Services</a></li> 
+                </ul>
+            </div>--> 
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🎬</span>Media Services</h2>
+                <ul>
+                    <li><a href="elastic-transcoder.html">Amazon Elastic Transcoder</a></li>
+                  <!--  <li><a href="kinesis-video-streams.html">Amazon Kinesis Video Streams</a></li>
+                    <li><a href="mediaconnect.html">AWS MediaConnect</a></li>
+                    <li><a href="mediaconvert.html">AWS MediaConvert</a></li>
+                    <li><a href="medialive.html">AWS MediaLive</a></li>
+                    <li><a href="mediapackage.html">AWS MediaPackage</a></li>
+                    <li><a href="mediastore.html">AWS MediaStore</a></li>
+                    <li><a href="mediatailor.html">AWS MediaTailor</a></li> 
+                </ul>
+            </div> --> 
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🚚</span>Migration & Transfer</h2>
+                <ul>
+                    <li><a href="migration-hub.html">AWS Migration Hub</a></li>
+                  <!--  <li><a href="application-discovery-service.html">AWS Application Discovery Service</a></li>
+                    <li><a href="database-migration-service.html">AWS Database Migration Service</a></li>
+                    <li><a href="server-migration-service.html">AWS Server Migration Service</a></li>
+                    <li><a href="snowball.html">AWS Snowball</a></li>
+                    <li><a href="datasync.html">AWS DataSync</a></li>
+                    <li><a href="transfer-family.html">AWS Transfer Family</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">📱</span>Mobile</h2>
+                <ul>
+                 <!--   <li><a href="amplify.html">AWS Amplify</a></li>
+                    <li><a href="appsync.html">AWS AppSync</a></li>
+                    <li><a href="device-farm.html">AWS Device Farm</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🕶️</span>AR & VR</h2>
+                <ul>
+                    <li><a href="sumerian.html">Amazon Sumerian</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="category">
+                <h2><span class="emoji">👨‍💻</span>Application Development</h2>
+                <ul>
+                    <li><a href="codestar.html">AWS CodeStar</a></li>
+                <!--    <li><a href="corretto.html">Amazon Corretto</a></li>
+                    <li><a href="cloud9.html">AWS Cloud9</a></li>
+                    <li><a href="codebuild.html">AWS CodeBuild</a></li>
+                    <li><a href="codecommit.html">AWS CodeCommit</a></li>
+                    <li><a href="codedeploy.html">AWS CodeDeploy</a></li>
+                    <li><a href="codepipeline.html">AWS CodePipeline</a></li>
+                    <li><a href="x-ray.html">AWS X-Ray</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🤝</span>Customer Engagement</h2>
+                <ul>
+                    <li><a href="connect.html">Amazon Connect</a></li>
+                 <!--   <li><a href="pinpoint.html">Amazon Pinpoint</a></li>
+                    <li><a href="simple-email-service.html">Amazon Simple Email Service (SES)</a></li>
+                </ul>
+            </div>  -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">💼</span>Business Applications</h2>
+                <ul>
+                    <li><a href="alexa-for-business.html">Alexa for Business</a></li>
+                 <!--   <li><a href="chime.html">Amazon Chime</a></li>
+                    <li><a href="workspaces.html">Amazon WorkSpaces</a></li>
+                    <li><a href="workdocs.html">Amazon WorkDocs</a></li>
+                    <li><a href="workmail.html">Amazon WorkMail</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🖥️</span>End User Computing</h2>
+                <ul>
+                    <li><a href="workspaces.html">Amazon WorkSpaces</a></li>
+                 <!--   <li><a href="appstream.html">Amazon AppStream 2.0</a></li>
+                    <li><a href="worklink.html">Amazon WorkLink</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🌐</span>Internet of Things</h2>
+                <ul>
+                    <li><a href="iot-core.html">AWS IoT Core</a></li>
+                <!--    <li><a href="freertos.html">Amazon FreeRTOS</a></li>
+                    <li><a href="iot-greengrass.html">AWS IoT Greengrass</a></li>
+                    <li><a href="iot-1-click.html">AWS IoT 1-Click</a></li>
+                    <li><a href="iot-analytics.html">AWS IoT Analytics</a></li>
+                    <li><a href="iot-button.html">AWS IoT Button</a></li>
+                    <li><a href="iot-device-defender.html">AWS IoT Device Defender</a></li>
+                    <li><a href="iot-device-management.html">AWS IoT Device Management</a></li>
+                    <li><a href="iot-events.html">AWS IoT Events</a></li>
+                    <li><a href="iot-sitewise.html">AWS IoT SiteWise</a></li>
+                    <li><a href="iot-things-graph.html">AWS IoT Things Graph</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🎮</span>Game Development</h2>
+                <ul>
+                    <li><a href="gamelift.html">Amazon GameLift</a></li>
+                 <!--   <li><a href="lumberyard.html">Amazon Lumberyard</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🔗</span>Blockchain</h2>
+                <ul>
+                    <li><a href="managed-blockchain.html">Amazon Managed Blockchain</a></li>
+                 <!--   <li><a href="quantum-ledger-database.html">Amazon Quantum Ledger Database (QLDB)</a></li> 
+                </ul>
+            </div> -->
+
+            <!-- <div class="category">
+                <h2><span class="emoji">🛰️</span>Satellite</h2>
+                <ul>
+                    <li><a href="ground-station.html">AWS Ground Station</a></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2><span class="emoji">🤖</span>Robotics</h2>
+                <ul>
+                    <li><a href="robomaker.html">AWS RoboMaker</a></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2><span class="emoji">⚛️</span>Quantum Technologies</h2>
+                <ul>
+                    <li><a href="braket.html">Amazon Braket</a></li>
+                </ul>
+            </div>
+
+          <!--  <div class="category">
+                <h2><span class="emoji">🧠</span>Machine Learning</h2>
+                <ul>
+                    <li><a href="sagemaker.html">Amazon SageMaker</a></li>
+                    <li><a href="comprehend.html">Amazon Comprehend</a></li>
+                    <li><a href="lex.html">Amazon Lex</a></li>
+                    <li><a href="polly.html">Amazon Polly</a></li>
+                    <li><a href="rekognition.html">Amazon Rekognition</a></li>
+                    <li><a href="textract.html">Amazon Textract</a></li>
+                    <li><a href="forecast.html">Amazon Forecast</a></li>
+                    <li><a href="personalize.html">Amazon Personalize</a></li>
+                    <li><a href="translate.html">Amazon Translate</a></li>
+                    <li><a href="deepracer.html">AWS DeepRacer</a></li>
+                    <li><a href="deepcomposer.html">AWS DeepComposer</a></li>
+                    <li><a href="deeplens.html">AWS DeepLens</a></li>
+                </ul>
+            </div>  
+
+        </section> -->
+    
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('dropdown-menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+</script>
+
+<section id="contact-us">
+    <h2>Contact Us</h2>
+    <p><strong>Connect with us on social media</strong></p>
+    <a href="https://www.linkedin.com/in/logeswarangv" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" style="width:30px; height:30px;">
+    </a>
+    <a href="https://www.instagram.com/logeshclouduniverse" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram" style="width:30px; height:30px;">
+    </a>
+</section>
+	
+	</div> 
+	
+    <footer class="footer">
+        <p>© 2024 LCU. All rights reserved. This is a demo site and is completely based on my knowledge</p>
+    </footer>
+</body>
+</html>
